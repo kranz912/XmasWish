@@ -1,4 +1,13 @@
-<!-- AngularJS -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xmas Wish</title>
+    <!-- AngularJS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
 
 <!-- AngularFire -->
@@ -17,4 +26,12 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="/app.js"></script>
 <script src="/dataacessLayer.js"></script>
+</head>
+<body ng-app="app" ng-controller='mainCtrl'>
+    <span ng-repeat='wish in data'>
+            {{wish.wish}}
+    </span>
+</body>
+</html>
