@@ -79,7 +79,7 @@
       </div>
     <div class="col-md-6 right">
         <ul class="msg" >
-            <li ng-repeat='wish in wishes'>
+            <li ng-repeat='wish in wishes | reverse'>
               <a href="#">
                 <span>{{wish.wish}}</span>
               </a>
