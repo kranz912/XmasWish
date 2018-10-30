@@ -7,7 +7,7 @@
             backdrop: true,
             keyboard: true,
             modalFade: true,
-            templateUrl: 'Scripts/Components/AddMessageModal.html'
+            templateUrl: '/modal.html'
         };
         var modalOptions = {
             closeButtonText: 'Close',

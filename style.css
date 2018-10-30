@@ -1,0 +1,181 @@
+
+
+
+h2,p{
+    font-size:100%;
+    font-weight:normal;
+  }
+  ul,li{
+    list-style:none;
+  }
+  ul{
+    overflow:hidden;
+    padding:3em;
+  }
+  ul li a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    /*height:10em;
+    width:10em;*/
+    width: 100%;
+    max-width: 25em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+  }
+  ul.msg li a span { display: block; }
+  ul li{
+    margin:1em;
+    float:left;
+  }
+  ul li h2{
+    font-size:140%;
+    font-weight:bold;
+    padding-bottom:10px;
+  }
+  ul li span{
+    font-family:"Reenie Beanie",arial,sans-serif;
+    font-size:180%;
+  }
+  ul li a{
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+    word-wrap: break-word;
+  }
+  ul li:nth-child(even) a{
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  ul li:nth-child(5n) a{
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  ol{text-align:center;}
+  ol li{display:inline;padding-right:1em;}
+  ol li a{color:#fff;}
+
+  .modal-body textarea {
+    width: 100%;
+    min-height: 250px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+header {
+    min-height: 80px;
+    background: #111;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5)
+}
+
+header .textheader {
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 30px 0 30px;
+}
+
+header .valentine-text {
+    float: right;
+    color: #383535;
+    font-size: 52px;
+    text-shadow: 0 0 3px #060606;
+}
+
+header .add-message {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+header .add-message:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+}
+#clock{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clock > div{
+	padding: 10px;
+	border-radius: 3px;
+  background-color: rgba(255, 0, 70, .4);
+	display: inline-block;
+}
+
+#clock div > span{
+	padding: 15px;
+	border-radius: 3px;
+	 background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}   
+
+h1 {
+    bottom: 0;
+    /*display: table-cell;*/
+    font-size: 7vh;
+    left: 0;
+  /*  position: absolute;*/
+    right: 0;
+    /*text-align: center;*/
+    top: 40%;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #c70000;
+    text-shadow: 0px 0px 5px #000;
+}
+body{
+    background-image: url('/_DSC9585.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

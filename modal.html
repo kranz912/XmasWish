@@ -1,0 +1,14 @@
+<div class="modal-body">
+    
+        <textarea ng-model="modelOptions.data" class="your-message" placeholder="your wish here..." maxlength="450"></textarea>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn"
+                data-ng-click="modalOptions.close()">
+            {{modalOptions.closeButtonText}}
+        </button>
+        <button class="btn btn-primary"
+                data-ng-click="modalOptions.ok(modelOptions.data);">
+            {{modalOptions.actionButtonText}}
+    </button>
+</div>

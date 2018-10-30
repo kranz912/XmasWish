@@ -7,31 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Xmas Wish</title>
-    <!-- AngularJS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDkLimBzDPMw69PQccCxmTYQxV8K1rqmvY",
-    authDomain: "kranznikolai-178423.firebaseapp.com",
-    databaseURL: "https://kranznikolai-178423.firebaseio.com",
-    projectId: "kranznikolai-178423",
-    storageBucket: "kranznikolai-178423.appspot.com",
-    messagingSenderId: "900292426420"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="/app.js"></script>
-<script src="/dataacessLayer.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="/ui-bootstrap-tpls.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDkLimBzDPMw69PQccCxmTYQxV8K1rqmvY",
+        authDomain: "kranznikolai-178423.firebaseapp.com",
+        databaseURL: "https://kranznikolai-178423.firebaseio.com",
+        projectId: "kranznikolai-178423",
+        storageBucket: "kranznikolai-178423.appspot.com",
+        messagingSenderId: "900292426420"
+      };
+      firebase.initializeApp(config);
+      
+    </script>
+    <script src="/app.js"></script>
+    <script src="/ModalService.js"></script>
+    <script src="/dataacessLayer.js"></script>
+    <link href="/style.css" rel="stylesheet">
 </head>
 <body ng-app="app" ng-controller='mainCtrl'>
-    <span ng-repeat='wish in wishes'>
-            {{wish.wish}}
-    </span>
+    <header>
+
+        <div class="container">
+          <div class="col-lg-3">
+            <a href="#" class="add-message" ng-click="add()">Make a wish<span class="glyphicon glyphicon-pencil"></span></a>
+          </div>
+          <div class="col-lg-9">
+            <div class="col-lg-3">
+          
+            </div>
+            <div class="col-lg-6">
+                
+            </div>
+                 
+           </div>
+        </div>  
+      </header>
+      <div class="col-md-6">
+          <h1>Time until Christmas</h1>
+          <div id="clock">
+              <div>
+                <span class="days"></span>
+              </div>
+              <div>
+                <span class="hours"></span>
+              </div>
+              <div>
+                <span class="minutes"></span>
+              </div>
+              <div>
+                <span class="seconds"></span>
+              </div>
+            </div>
+      </div>
+    <div class="col-md-6">
+        <ul class="msg" >
+            <li ng-repeat='wish in wishes'>
+              <a href="#">
+                <span>{{wish.wish}}</span>
+              </a>
+            </li>
+        </ul>
+    </div>
+    
+    
 </body>
 </html>
